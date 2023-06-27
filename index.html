@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" href="./img/icon/make-up.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Beuitty</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header" data-aos="fade-down" data-aos-duration="1000">
+  <div class="header__wrapper">
+    <div class="header__container _container">
+      <div class="header__body">
+        <div class="header__logo">Beuitty.</div>
+
+        <nav class="header__navigation">
+          <a href="#" class="header__nav header__home">Home</a>
+          <a href="#" class="header__nav header__product">Product</a>
+          <a href="#" class="header__nav header__about">About</a>
+          <a href="#" class="header__nav header__cotact">Contact</a>
+          <div class="header__nav"><button class="header__button">Free Trial</button></div>
+        </nav>
+
+        <div class="header__burger" onclick="burgerFn()">
+          <img src="./img/header/burger.svg" alt="">
+          <img src="./img/header/burger-hover.svg" alt="" class="hover">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  let header = document.querySelector('.header')
+  addEventListener("scroll", (event) => {
+    if (window.pageYOffset >= 100) {
+      header.classList.add('fixed')
+    } else {
+      header.classList.remove('fixed')
+    }
+  });
+
+  let burgerMenu = document.querySelector(".header__navigation")
+  function burgerFn() {
+    burgerMenu.classList.toggle('active')
+    document.body.classList.toggle('hidden')
+  }
+
+</script>
+
+      <main class="page">
+        <div class='main'>
+  <div class='main__wrapper'>
+    <div class='main__container _container'>
+      <div class='main__body'>
+
+        <div class="main__left">
+          <h1 class="main__title" data-aos="fade-right" data-aos-duration="500">Take care of you with
+            natural Ingredients</h1>
+
+          <p class="main__description" data-aos="fade-right" data-aos-delay="150">
+            It is a long established fact that a reader will be distracted by the readable content of a page
+          </p>
+
+          <div class="main__buttons" data-aos="fade-up" data-aos-duration="600">
+            <button class="main__start">Get Stareted</button>
+            <button class="main__see">See Treatments
+              <span class="main__button-icon"><img src="./img/main/arrow-down.png" alt=""></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="main__right">
+          <div class="main__woman" data-aos="fade-up">
+            <img src="./img/main/woman.png" alt="">
+          </div>
+          <div class="main__arrow"><img data-aos="fade-left" src="./img/main/arrow.png" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='features'>
+  <div class='features__wrapper'>
+    <div class='features__container _container'>
+      <div class='features__body'>
+        <ul class="features__list" data-aos="zoom-out-down" data-aos-offset="-400">
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/eye.png" alt="">
+              <img src="./img/features/eye-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Permanent Eyebrows</h2>
+          </div>
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/nail.png" alt="">
+              <img src="./img/features/nail-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Nail Treatment</h2>
+          </div>
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/shape.png" alt="">
+              <img src="./img/features/shape-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Permanent Lip Blush</h2>
+          </div>
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/tatoo.png" alt="">
+              <img src="./img/features/tatoo-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Tatoo Remobal</h2>
+          </div>
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/make-up.png" alt="">
+              <img src="./img/features/make-up-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Skin Care support</h2>
+          </div>
+          <div class="features__element">
+            <div class="features__img">
+              <img src="./img/features/cosmetics.png" alt="">
+              <img src="./img/features/cosmetics-hover.png" alt="">
+            </div>
+            <h2 class="features__title">Permanent Eyebrows</h2>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='quality'>
+  <div class='quality__wrapper'>
+    <div class='quality__container _container'>
+      <div class='quality__body'>
+        <div class="quality__left" data-aos="fade-right">
+          <img src="./img/quality/woman.png" alt="" class="quality__woman">
+        </div>
+        <div class="quality__right">
+          <h2 class="quality__title" data-aos="fade-left">Our <span class="brown">quality service</span> is ready to
+            help you!</h2>
+          <h3 class="quality__subtitle" data-aos="fade-left">It is a long <span class="brown"></span>established
+            fact</span> that a reader
+            will be distracted by the
+            readable.</h3>
+          <p class="quality__description" data-aos="fade-left">It is a long established fact that a reader will be
+            distracted by the readable
+            content of a page.</p>
+
+          <div class="quality__checkboxs" data-aos="fade-left">
+            <div class="quality__checkbox"><span class="active"></span> <label>Smooth</label></div>
+            <div class="quality__checkbox"><span class="active"></span> <label>Lightweight</label></div>
+            <div class="quality__checkbox"><span class="active"></span> <label>Dark Spots</label></div>
+            <div class="quality__checkbox"><span class="active"></span> <label>Shining</label></div>
+            <div class="quality__checkbox"><span class="active"></span> <label>Herbaceous</label></div>
+            <div class="quality__checkbox"><span class="active"></span> <label>Wrinkles</label></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='services'>
+  <div class='services__wrapper'>
+    <div class='services__container _container'>
+      <div class='services__body'>
+        <div class="services__top">
+          <h2 class="services__title" data-aos="fade-right">See our <span class="brown">featured services</span> for
+            you.</h2>
+          <button class="services__button" data-da=".services__body,750,last" data-aos="fade-left">Seel
+            All
+            services
+            <span class=" services__button-icon"><img src="./img/services/arrow.png" alt=""></span></button>
+        </div>
+
+        <div class="swiper services__slider" data-aos="fade-left">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide1.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Classical Facial</h4>
+                <h5 class="services__slide-subtitle">Facial</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide2.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Idea & Material</h4>
+                <h5 class="services__slide-subtitle">Premium hair cutting</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide3.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Concentrate shampoo</h4>
+                <h5 class="services__slide-subtitle">Hair wash</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide1.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Classical Facial</h4>
+                <h5 class="services__slide-subtitle">Facial</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide2.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Idea & Material</h4>
+                <h5 class="services__slide-subtitle">Premium hair cutting</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide3.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Concentrate shampoo</h4>
+                <h5 class="services__slide-subtitle">Hair wash</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide1.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Classical Facial</h4>
+                <h5 class="services__slide-subtitle">Facial</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide2.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Idea & Material</h4>
+                <h5 class="services__slide-subtitle">Premium hair cutting</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide3.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Concentrate shampoo</h4>
+                <h5 class="services__slide-subtitle">Hair wash</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide1.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Classical Facial</h4>
+                <h5 class="services__slide-subtitle">Facial</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide2.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Idea & Material</h4>
+                <h5 class="services__slide-subtitle">Premium hair cutting</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide3.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Concentrate shampoo</h4>
+                <h5 class="services__slide-subtitle">Hair wash</h5>
+              </div>
+            </div>
+            <div class="swiper-slide services__slide">
+              <img src="./img/services/slide2.png" alt="" class="services__img">
+              <div class="services__slide-text">
+                <h4 class="services__slide-title">Idea & Material</h4>
+                <h5 class="services__slide-subtitle">Premium hair cutting</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services__slider-progress" data-aos="fade-up" data-aos-offset="-100">
+          <div class="services__slider-counter">
+            <!-- <span id="count">02</span> <span class="gray"> of 12</span> -->
+          </div>
+
+          <div class="services__slider-range">
+            <div class="services__slider-demo-start"></div>
+            <div class="services__slider-demo">
+              <input type="range" id="slider-range" value="1" min="1" max="12">
+              <span class="services__slider-demo-value"></span>
+              <div class="services__slider-demo-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='good'>
+  <div class='good__wrapper'>
+    <div class='good__container _container'>
+      <div class='good__body'>
+        <div class="good__left">
+          <h1 class="good__title brown" data-aos="fade-right">99%</h1>
+          <h2 class="good__subtitle" data-aos="fade-right">
+            Be good to your skin. You will <span class="brown">wear it every</span>
+            day for your
+          </h2>
+          <div class="good__element" data-aos="fade-right" data-da=".good__right,860,1">
+            <p class="good__text">It is a long established fact that a reader will be distracted by the readable content
+              of a page.</p>
+
+            <div class="good__buttons">
+              <div class="good__start">Get Stareted</div>
+
+              <div class="good__see">See Treatments <span class="good__button-icon"><img src="./img/good/arrow-down.png"
+                    alt=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="good__right" data-aos="fade-left">
+          <div class="good__right-img">
+            <img src="./img/good/img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class='reviews'>
+  <div class='reviews__wrapper'>
+    <div class='reviews__container _container'>
+      <div class='reviews__body'>
+        <div class="reviews__main">
+          <div class="reviews__left">
+            <div class="reviews__swiper swiper" data-aos="fade-right">
+              <div class="swiper-wrapper">
+                <div class="reviews__review swiper-slide">
+                  <div class="reviews__review-avatar"><img src="./img/reviews/review.png" alt=""></div>
+
+                  <p class="reviews__review-text">There are many variations of passages of Lorem Ipsum available, but
+                    the
+                    majority have suffered alteration in some form, by injected humour</p>
+
+                  <div class="reviews__review-rating">
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/star.svg" alt=""></div>
+                  </div>
+
+                  <div class="reviews__review-username">Robert Fox</div>
+                </div>
+
+                <div class="reviews__review swiper-slide">
+                  <div class="reviews__review-avatar"><img src="./img/reviews/review.png" alt=""></div>
+
+                  <p class="reviews__review-text">There are many variations of passages of Lorem Ipsum available, but
+                    the
+                    majority have suffered alteration in some form, by injected humour</p>
+
+                  <div class="reviews__review-rating">
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/star.svg" alt=""></div>
+                  </div>
+
+                  <div class="reviews__review-username">Robert Fox</div>
+                </div>
+
+                <div class="reviews__review swiper-slide">
+                  <div class="reviews__review-avatar"><img src="./img/reviews/review.png" alt=""></div>
+
+                  <p class="reviews__review-text">There are many variations of passages of Lorem Ipsum available, but
+                    the
+                    majority have suffered alteration in some form, by injected humour</p>
+
+                  <div class="reviews__review-rating">
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/active-star.svg" alt=""></div>
+                    <div class="reviews__review-star"><img src="./img/reviews/star.svg" alt=""></div>
+                  </div>
+
+                  <div class="reviews__review-username">Robert Fox</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="reviews__right">
+            <div class="reviews__title" data-aos="fade-left">Over <span class="brown">5000</span> customers
+              with 5-star reviews</div>
+            <p class="reviews__text" data-aos="fade-left">It is a long established fact that a reader will be distracted
+              by the readable
+              content of a page.</p>
+
+            <div class="reviews__users" data-aos="fade-left">
+              <img src="./img/reviews/user1.png" alt="" class="reviews__user">
+              <img src="./img/reviews/user2.png" alt="" class="reviews__user">
+              <img src="./img/reviews/user3.png" alt="" class="reviews__user">
+              <img src="./img/reviews/user4.png" alt="" class="reviews__user">
+            </div>
+
+            <div class="reviews__counter" data-aos="fade-left"><img src="./img/reviews/active-star.svg" alt=""> <span
+                class="reviews__counter-value">4.9 <span class="gray">(7000 Reviewes)</span></span></div>
+          </div>
+        </div>
+
+        <div class="reviews__logos" data-aos="fade-down">
+          <div class="reviews__logo">
+            <img src="./img/reviews/logo1.png" alt="">
+          </div>
+          <div class="reviews__logo">
+            <img src="./img/reviews/logo2.png" alt="">
+          </div>
+          <div class="reviews__logo">
+            <img src="./img/reviews/logo3.png" alt="">
+          </div>
+          <div class="reviews__logo">
+            <img src="./img/reviews/logo4.png" alt="">
+          </div>
+          <div class="reviews__logo">
+            <img src="./img/reviews/logo5.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+    </div>
+    <footer class="footer" data-aos="fade-up">
+  <div class="footer__wrapper">
+    <div class="footer__container _container">
+      <div class="footer__body">
+        <div class="footer__top" data-da=".footer__middle,840,1">
+          <h2 class="footer__title">
+            Subscribe newsletter
+            & get latest news
+          </h2>
+
+          <div class="footer__form">
+            <input type="text" class="footer__input" placeholder="Enter email address">
+            <div class="footer__submit">Continue</div>
+          </div>
+        </div>
+
+        <div class="footer__middle">
+
+          <div class="footer__col">
+            <div class="footer__logo">Beuitty.</div>
+            <p class="footer__text">Counter Delivery, Carters Beach PostCentre, Westport</p>
+            <div class="footer__network">
+              <a href="#" class="footer__net icon-facebook"></a>
+              <a href="#" class="footer__net icon-instagram"></a>
+              <a href="#" class="footer__net icon-twitter"></a>
+            </div>
+          </div>
+
+          <div class="footer__col" data-spollers="840,max">
+            <h4 class="footer__nav-title" data-spoller>About</h4>
+            <div class="footer__list-body">
+              <ul class="footer__list">
+                <a href="#" class="footer__li">Company</a>
+                <a href="#" class="footer__li">Team</a>
+                <a href="#" class="footer__li">Career</a>
+                <a href="#" class="footer__li">Blogs</a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col" data-spollers="840,max">
+            <h4 class="footer__nav-title" data-spoller>Support</h4>
+            <div class="footer__list-body">
+              <ul class="footer__list">
+                <a href="#" class="footer__li">Help center</a>
+                <a href="#" class="footer__li">Loan support</a>
+                <a href="#" class="footer__li">Neighborhood support</a>
+                <a href="#" class="footer__li">Management</a>
+                <a href="#" class="footer__li">Privacy Policy</a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col" data-spollers="840,max">
+            <h4 class="footer__nav-title" data-spoller>Product</h4>
+            <div class="footer__list-body">
+              <ul class="footer__list">
+                <a href="#" class="footer__li">E- books</a>
+                <a href="#" class="footer__li">Presentation</a>
+                <a href="#" class="footer__li">Dashboard</a>
+                <a href="#" class="footer__li">Management</a>
+                <a href="#" class="footer__li">Privacy Policy</a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col" data-spollers="840,max">
+            <h4 class="footer__nav-title" data-spoller>Address</h4>
+            <div class="footer__list-body">
+              <ul class="footer__list">
+                <a href="#" class="footer__li">Counter Delivery,</a>
+                <a href="#" class="footer__li">Cartest Beach PostCentre</a>
+                <a href="#" class="footer__li">Westport</a>
+                <a href="#" class="footer__li">www.minimo.com</a>
+                <a href="tel:+00888777554468" class="footer__li">+00888 777 5544 68</a>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__right">All right reserves in Beauty @2022</div>
+          <div class="footer__companies">
+            <div class="footer__company">Company</div>
+            <div class="footer__company">Company</div>
+            <div class="footer__company">Company</div>
+            <div class="footer__company">Company</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="popup-wrapper">
+
+</div>
+
+<!-- <div class="popup-wrapper__item popup-item">
+	<div class="popup-item__body">
+		<div class="popup-item__top">
+			<div class="popup-item__title">
+
+			</div>
+			<button class="popup-item__close popup-close" type="button"><span></span></button>
+		</div>
+		<div class="popup-item__content">
+			
+		</div>
+	</div>
+</div> -->
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
