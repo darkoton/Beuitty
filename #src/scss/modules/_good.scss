@@ -1,0 +1,118 @@
+.good{
+  background: #F9F9F9;
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptiv-value(padding-top, 92, 60, 1);
+    @include adaptiv-value(padding-bottom, 92, 40, 1);
+    @include adaptiv-value(column-gap, 80, 0, 1);
+  }
+  &__left{
+    width: 100%;
+    max-width: 487px;
+    // padding-top: 36px;
+  }
+  &__title{
+    font-weight: 700;
+    @include adaptiv-font(100, 50);
+    @include adaptiv-line-height(117, 60);
+    color: #B67659;
+    font-family: $fontRoboto;
+    @include  adaptiv-value(margin-bottom, 6, 5, 1);
+  }
+  &__subtitle{
+    font-weight: 800;
+    @include  adaptiv-font(42, 24);
+    @include adaptiv-line-height(59, 36);
+    color: #000;
+    width: 100%;
+    max-width: 421px;
+    @include adaptiv-value(margin-bottom, 26, 20, 1);
+  }
+  &__text{
+    font-weight: 400;
+    @include adaptiv-font(18, 14);
+    @include adaptiv-line-height(29, 22);
+    color: #000;
+    @include adaptiv-value(margin-bottom, 40, 20, 1);
+  }
+  &__buttons{
+    display: flex;
+    @include adaptiv-value(column-gap, 32, 20, 1);
+    align-items: center;
+  }
+  &__start{
+    @extend %button;
+    @include adaptiv-value(padding-top, 16.5, 9, 1);
+    @include adaptiv-value(padding-bottom, 16.5, 9, 1);
+    @include adaptiv-value(padding-left, 30, 34, 1);
+    @include adaptiv-value(padding-right, 30, 34, 1);
+
+    font-weight: 500;
+    @include adaptiv-font(18, 14);
+    @include adaptiv-line-height(29, 22);
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 70px rgba(7, 8, 65, 0.1);
+    border-radius: 3px;
+  }
+  &__see{
+    font-weight: 400;
+    @include adaptiv-font(18, 14);
+    @include adaptiv-line-height(29, 22);
+    color: #000;
+    display: flex;
+    column-gap: 7px;
+    align-items: center;
+    justify-content: space-between;
+    @media (any-hover:hover){
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    &:hover{
+      & .good__button-icon{
+        transform: translate(0, 2px);   
+      }
+    }
+    }
+  }
+  &__button-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptiv-value(padding, 12, 7, 1);
+    border-radius: 50%;
+    border: 1px solid #000000;
+    @include adaptiv-value(max-width, 40, 24, 1);
+    @include adaptiv-value(max-height, 40, 24, 1);
+    transition: all 0.3s ease 0s;
+    & img{
+      @include adaptiv-value(width, 16, 9, 1);
+      @include adaptiv-value(height, 16, 9, 1);
+    }
+  }
+  @media (max-width: #{$maxWidthContainer + px}){
+    &__right-img img{
+      width: 100%;
+    }
+  }
+  @media (max-width: 860px){
+    &__body{
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &__title{
+      font-family: $fontLato;
+    }
+    &__right-img img{
+      transform: translateX(-17px);
+    }
+    &__left, &__subtitle{
+      max-width: 100%;
+    }
+    &__element{
+      margin-top: 32px;
+    }
+  }
+
+}

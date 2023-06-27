@@ -1,0 +1,31 @@
+//< " ФАЙЛ СТИЛЕЙ КНОПОК " >=============================================================================================================>//
+
+%buttonOpacity{
+  background: transparent;
+  color: $colorWhite;
+  border: 1px solid #FFFFFF;
+
+  @media (any-hover:hover){
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  &:hover{
+    background: $colorBrown;
+    border-color: $colorBrown;
+  }
+  }
+}
+
+%button{
+  background: $colorBrown;
+  color: $colorWhite;
+  border: 1px solid $colorBrown;
+  
+  @media (any-hover:hover){
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  &:hover{
+    background: transparent;
+    color: $colorBrown;
+  }
+  }
+}

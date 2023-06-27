@@ -1,0 +1,205 @@
+.services{
+  background: #111921;
+  &__body{
+    padding: 120px 0 60px 0;
+    @include adaptiv-value(padding-top, 120, 48, 1);
+    @include adaptiv-value(padding-bottom, 60, 46, 1);
+    @media (max-width: 750px){
+    display:flex;
+    flex-direction:column;
+    }
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    @include adaptiv-value(margin-bottom, 54, 30, 1);
+
+  }
+  &__title{
+    font-weight: 800;
+    @include adaptiv-font(42, 24);
+    @include adaptiv-line-height(59, 34);
+    color: $colorWhite;
+    width: 100%;
+    max-width: 477px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 54px;
+      height: 2px;
+      background: #fff;
+    }
+  }
+  &__button{
+    background: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $colorWhite;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    &-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      transition: all 0.3s ease 0s;
+    }
+    @media (any-hover:hover){
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    &:hover{
+      & .services__button-icon{
+        transform: translate(5px, 0);
+        border-color: $colorBrown;
+      }
+    }
+    }
+    @media (max-width: 750px){
+      font-family: $fontAlegreya;
+      justify-content: center;
+    }
+  }
+
+  &__slider{
+    @include  adaptiv-value(margin-bottom, 70, 25, 1);
+    & .swiper-wrapper{
+      cursor: grab;
+    }
+    @media (max-width: 750px){
+      pointer-events:none
+    }
+  }
+  & .swiper-wrapper{
+    @media (max-width: 750px){
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+  }
+  &__slide{   
+    position: relative;
+    width: auto;
+    &-text{
+      position: absolute;
+      bottom: 30px;
+      left: 22px;
+    }
+    &-title{
+      font-weight: 700;
+      @include adaptiv-font(32, 24);
+      @include  adaptiv-line-height(51, 38);
+      color: $colorWhite;
+    }
+    &-subtitle{
+      font-weight: 400;
+      font-size: 18px;
+      @include adaptiv-font(18, 14);
+      @include adaptiv-line-height(29, 22);
+      color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      &::before{
+        content: '';
+        height: 1px;
+        width: 54px;
+        background: #fff;
+        display: block; 
+      }
+    }
+
+    @media (max-width: 750px){
+      & img{
+        max-width: 100%;
+      }
+      &:not(:first-child, :nth-child(2), :nth-child(3)){
+        display: none;
+      }
+      margin-right: 0 !important;
+    }
+    @media (max-width: 500px){
+      width: 100%;
+      & img{
+        width: 100%;
+        height: 100%;
+        max-height: 254px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__slider-progress{
+    color: $colorWhite;
+    font-weight: 400;
+    @include adaptiv-font(18, 14);
+    @include adaptiv-line-height(29, 15);
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
+    @media (max-width: 750px){
+      display: none;
+    }
+  }
+  
+  &__slider-counter{
+    width: auto;  
+    min-width: 67px;
+  }
+  &__slider-range{
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+  }
+  & #slider-range{
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    transform: translate(-0.5%, -50%);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  &__slider-demo{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    height: 1.5px;
+    position: relative;
+    display: flex;
+  }
+  &__slider-demo-start{
+    background: #fff;
+    height: 1.5px;
+  }
+  &__slider-demo-value{
+    height: 1.5px;
+    width: 0%;
+    background: #fff;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+  &__slider-demo-ball{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    top: 50%;
+    left: 0%;
+    border-radius: 50%;
+    transform: translate(0%, -50%);
+    transition: all 0.3s ease 0s;
+  }
+  .gray{
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
