@@ -1,3 +1,5 @@
+![NFT Preview](https://raw.githubusercontent.com/darkoton/Beuitty/refs/heads/main/%23src/img/preview.png)
+
 # Beuitty
 
 Modern responsive landing page for a beauty salon.
